@@ -41,6 +41,20 @@ body {
   top: 20%;
 }
 
+.credit{
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .odin-logo {
   width: 70px;
 }
