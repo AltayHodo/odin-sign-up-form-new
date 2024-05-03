@@ -84,6 +84,7 @@ form {
   background-color: white;
   padding: 10px 0 15px 25px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, .15);
+  position: relative;
 }
 
 .form-title {
@@ -99,13 +100,39 @@ form {
   letter-spacing: 1.5px;
 }
 
-input {
-  width: 250px;
-}
-
 .input-container {
   display: flex;
   flex-direction: column;
+}
+
+label{
+  margin-bottom: 4px;
+}
+
+input {
+  width: 250px;
+  border: 1px solid #E5E7EB;
+  height: 25px;
+  border-radius: 5px;
+}
+
+input:focus{
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.password-warning{
+  color: red;
+  position: absolute;
+  font-size: 12px;
+  bottom: 20px;
+}
+
+.invisible{
+  opacity: 0;
+}
+
+.invalid{
+  border: 1px solid red;
 }
 
 .submit-button {
@@ -123,6 +150,7 @@ input {
   margin-left: 25px;
   margin-top: 25px;
 }
+
 .green{
   color: #596D48;
   cursor: pointer;
